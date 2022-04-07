@@ -1,4 +1,5 @@
-n=int(input())
+
+'''n=int(input())
 a=[]
 b=[]
 a=(list(map(int, input().split())))
@@ -22,4 +23,7 @@ for i in range(111111111111111111111111111111111111111):
         continue
     if x == n and y == n:
         break
-print(tot)
+print(tot)'''
+
+alphabet, hum = input(), input()
+print(1 + sum([alphabet.find(hum[i+1]) <= alphabet.find(hum[i]) for i in range(len(hum)-1)]))
